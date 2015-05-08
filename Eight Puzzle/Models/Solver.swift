@@ -11,7 +11,7 @@ import UIKit
 class Solver: NSObject {
 
     var visited : [Int: BoardState] = [Int: BoardState]()
-    var knowStates : [String: BoardState] = [String: BoardState]()
+    var knowStates : [String: NodeBoard] = [String: NodeBoard]()
     var nodesToExpand : [NodeBoard] = []
     var initialState : BoardState?
     var currentNode : NodeBoard?
@@ -32,12 +32,12 @@ class Solver: NSObject {
             return node
         }
         var sons : [NodeBoard]? = node.getSons()
-        knowStates[node.state!.hashValueString] = node.state!
+        knowStates[node.state!.hashValueString] = node
         var sonsClean : [NodeBoard]? = []
         for son in sons! {
             if((knowStates[son.state!.hashValueString]) == nil){
                 sonsClean?.append(son)
-                knowStates[son.state!.hashValueString] = son.state!
+                knowStates[son.state!.hashValueString] = son
             }
         }
         for son in sonsClean! {
@@ -57,7 +57,7 @@ class Solver: NSObject {
                 return currentNode
             }
             var sons : [NodeBoard]? = currentNode!.getSons()
-            knowStates[currentNode!.state!.hashValueString] = currentNode!.state!
+            knowStates[currentNode!.state!.hashValueString] = currentNode!
             var sonsClean = getSonsClean(sons)
             for son in sonsClean {
                 nodesToExpand.append(son)
@@ -75,7 +75,7 @@ class Solver: NSObject {
         var sonsClean : [NodeBoard] = []
         for son in sons! {
             if((knowStates[son.state!.hashValueString]) == nil){
-//                knowStates[son.state!.hashValueString] = son.state!
+                knowStates[son.state!.hashValueString] = son
                 sonsClean.append(son)
             }
         }

@@ -117,11 +117,11 @@ class ResultViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier! == "BoardSegue") {
-            self.boardViewController = (segue.destinationViewController as BoardCollectionViewController)
+            self.boardViewController = (segue.destinationViewController as! BoardCollectionViewController)
             self.boardViewController?.delegate = self
             self.boardViewController?.state = state!
         } else if segue.identifier! == "StepsSegue" {
-            var stepsViewController = segue.destinationViewController as StepsViewController
+            var stepsViewController = segue.destinationViewController as! StepsViewController
             stepsViewController.steps = self.statesOrder
         }
     }

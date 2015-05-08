@@ -7,58 +7,58 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		020531FDC9877E7DACA49F28 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F4D67504F429E1FC9CC5F776 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		28D7528255200A4A599A0099 = {
-			isa = PBXGroup;
-			children = (
-				020531FDC9877E7DACA49F28 /* Podfile */,
-				37C9D71BFB5DC591D34C5537 /* Frameworks */,
-				B2261FD8453F56AFA7444BAD /* Products */,
-				ECCCBEE307418CB2E736EF99 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		37C9D71BFB5DC591D34C5537 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B2261FD8453F56AFA7444BAD /* Products */ = {
+		102BC8E31D70EB59CD917537 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECCCBEE307418CB2E736EF99 /* Targets Support Files */ = {
+		2EAB79B675D5ADA3B9B9C0B3 = {
+			isa = PBXGroup;
+			children = (
+				F4D67504F429E1FC9CC5F776 /* Podfile */,
+				EA4B7F42817117B0F4BE68F0 /* Frameworks */,
+				102BC8E31D70EB59CD917537 /* Products */,
+				E55E7C8746011AB9FACA7BFC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E55E7C8746011AB9FACA7BFC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		EA4B7F42817117B0F4BE68F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		DB3585875BF837DF7D0EF0DB /* Project object */ = {
+		D45C8D30B93B1D3788E2E927 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 7885C8C239E817CEE3970F6A /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = BCF55E677358E6DDB1AD11A0 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 28D7528255200A4A599A0099;
-			productRefGroup = B2261FD8453F56AFA7444BAD /* Products */;
+			mainGroup = 2EAB79B675D5ADA3B9B9C0B3;
+			productRefGroup = 102BC8E31D70EB59CD917537 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -67,7 +67,7 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		139052B9E69A5891DBCEDF7B /* Debug */ = {
+		6B77CAC00BF0D0A38B224037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -106,7 +106,7 @@
 			};
 			name = Debug;
 		};
-		75BEF798023AE4FE5C6F28A5 /* Release */ = {
+		BDCB0A1F5CA9833F6A219591 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -143,16 +143,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7885C8C239E817CEE3970F6A /* Build configuration list for PBXProject "Pods" */ = {
+		BCF55E677358E6DDB1AD11A0 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				139052B9E69A5891DBCEDF7B /* Debug */,
-				75BEF798023AE4FE5C6F28A5 /* Release */,
+				6B77CAC00BF0D0A38B224037 /* Debug */,
+				BDCB0A1F5CA9833F6A219591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB3585875BF837DF7D0EF0DB /* Project object */;
+	rootObject = D45C8D30B93B1D3788E2E927 /* Project object */;
 }

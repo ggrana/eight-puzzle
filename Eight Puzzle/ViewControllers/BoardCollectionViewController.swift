@@ -57,7 +57,7 @@ class BoardCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as BoardCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BoardCollectionViewCell
         
         cell.label.text = "\(state.positions[indexPath.row/(state.size! + 1)][indexPath.row%(state.size! + 1)])"
         if(cell.label.text == "0") {

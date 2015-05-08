@@ -50,7 +50,7 @@ class StepsViewController: UIViewController {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifierSteps, forIndexPath: indexPath) as StepsCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifierSteps, forIndexPath: indexPath) as! StepsCollectionViewCell
         
         cell.label.text = "\(indexPath.row + 1)."
         cell.setState(steps[indexPath.row])

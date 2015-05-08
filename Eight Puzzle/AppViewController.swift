@@ -46,10 +46,10 @@ class AppViewController: BaseViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier! == "BoardSegue") {
-            self.boardViewController = (segue.destinationViewController as BoardCollectionViewController)
+            self.boardViewController = (segue.destinationViewController as! BoardCollectionViewController)
             self.boardViewController?.delegate = self
         } else if (segue.identifier! == "pushSolver"){
-            var result = (segue.destinationViewController as ResultViewController)
+            var result = (segue.destinationViewController as! ResultViewController)
             result.state = self.boardViewController!.state
         }
     }
